@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alert {
+    @apply max-w-max mx-auto my-2 py-1 px-5 rounded-full text-center bg-red text-white
+}
+
+.image__container {
+    @apply w-[280px] max-w-xs bg-white rounded-xl overflow-hidden
+}
+
+.image__picture {
+    @apply h-60 w-full object-cover
+}
+
+.image__info-container {
+    @apply px-5 my-4 flex flex-col justify-between items-center gap-3
+}
+
+.image__views-likes-container {
+    @apply w-full flex justify-evenly text-sm
+}
+
+.image__btn-full-view {
+    @apply w-full py-1 text-center bg-orange text-white font-medium rounded-lg hover:shadow-md hover:shadow-gray-500 hover:bg-dark-orange duration-200 sm:w-36
+}
+
+.paginator__item {
+    @apply w-7 h-7 text-cyan-800 bg-white rounded-md hover:text-white hover:bg-orange duration-200
+}
+
+.paginator__item--active {
+    @apply w-7 h-7 text-white bg-orange rounded-md
+}
+
+.categories-list__item {
+    @apply hover:text-orange duration-200
+}
+
+.categories-list__item--active {
+    @apply text-orange duration-200
+}
